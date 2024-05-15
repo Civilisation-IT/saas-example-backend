@@ -51,9 +51,9 @@ jobs:
       matrix:
         node-version: [20.x]
     steps:
-    - uses: webfactory/ssh-agent@v0.5.4
-      with:
-        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+    # - uses: webfactory/ssh-agent@v0.5.4
+    #   with:
+    #     ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
     - name: Check repo
       uses: actions/checkout@v4
       with:
